@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="correctorDiagrama">
+  <ClassDiagramComponents>
+    <Class name="CorrectorOrtografico" package="" visibility="public" xPosition="80.0" yPosition="117.0">
+      <Fields>
+        <Field name="CorrectorOrtografico" type="Object" visibility="private"/>
+        <Field name="escuchaClickBoton" type="Object" visibility="private"/>
+        <Field name="palabra" type="string" visibility="private"/>
+        <Field name="language" type="string" visibility="private"/>
+        <Field name="textAreaPalabra" type="JTextArea" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="ActionPerformed" returnType="void" visibility="public">
+          <Argument type="ActionEvent" name="e"/>
+        </Method>
+        <Method name="limpiaTextArea" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Diccionarios" package="" visibility="public" xPosition="522.0" yPosition="127.0">
+      <Fields>
+        <Field name="diccionarioESP" type="arrayList" visibility="private"/>
+        <Field name="diccionarioENG" type="arrayList" visibility="private"/>
+        <Field name="diccionarioGER" type="arrayList" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="agregaDiccionarioESP" returnType="string" visibility="public">
+          <Argument type="String" name="palabra"/>
+        </Method>
+        <Method name="agregaDiccionarioENG" returnType="string" visibility="public">
+          <Argument type="String" name="palabra"/>
+        </Method>
+        <Method name="agregaDiccionarioGER" returnType="string" visibility="public">
+          <Argument type="String" name="palabra"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="tiene" source="CorrectorOrtografico" target="Diccionarios" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="ArrayList"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
