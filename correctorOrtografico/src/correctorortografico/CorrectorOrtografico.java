@@ -159,7 +159,7 @@ public class CorrectorOrtografico extends JFrame implements ActionListener{
         container.add(idioma,constraints);
         //container.add(panelIdioma,constraints);
         
-        String[] listaIdiomas = {"Español (alfab. internacional", "Inglés", "Alemán"};
+        String[] listaIdiomas = {"Elija un idioma","Español (alfab. internacional", "Inglés", "Alemán"};
         JComboBox comboBoxIdioma = new JComboBox(listaIdiomas);
         comboBoxIdioma.addActionListener(
                 new ActionListener(){
